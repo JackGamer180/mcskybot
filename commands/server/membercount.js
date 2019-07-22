@@ -25,7 +25,7 @@ class membercountCommand extends commando.Command {
         .addField("👥 | Member Count", "-> " + message.guild.memberCount)
         .addField("🤖 | Bot Count", "-> " + message.guild.members.filter(member => member.user.bot).size)
         .setTimestamp()
-        .setFooter("Mcsky Bot | created by hieu#0843")});
+        .setFooter("Mcsky Bot | created by FrostedHost")});
   }
 }
 
