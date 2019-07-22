@@ -43,7 +43,7 @@ class msgallCommand extends commando.Command {
               .addField("🔑 | Executor", message.author.tag)
               .addField("💬 | MsgAll Message", message.content)
               .setTimestamp()
-              .setFooter("Mcsky Bot | created by hieu#0843")}));
+              .setFooter("Mcsky Bot | created by FrostedHost")}));
         });
   }
 }
