@@ -38,7 +38,7 @@ class muteCommand extends commando.Command {
     .addField("📺 | Channel Executed", "-> " + message.channel)
     .addField("⏰ | Time", "-> " + message.createdAt)
     .setTimestamp()
-    .setFooter("Mcsky Bot | created by hieu#0843")}));
+    .setFooter("Mcsky Bot | created by FrostedHost")}));
     if (mutemember.roles.has(staffrole.id)) return message.channel.send("That user is a staff member.").then(moderationlogs.send({embed: new Discord.RichEmbed()
     .setTitle("**Mcsky | Violation**")
     .setColor("#FF0000")
@@ -47,7 +47,7 @@ class muteCommand extends commando.Command {
     .addField("📺 | Channel Executed", "-> " + message.channel)
     .addField("⏰ | Time", "-> " + message.createdAt)
     .setTimestamp()
-    .setFooter("Mcsky Bot | created by hieu#0843")}));
+    .setFooter("Mcsky Bot | created by FrostedHost")}));
     moderationlogs.send({embed: new Discord.RichEmbed()
     .setTitle("**Mcsky | Mute**")
     .setColor("#4286f4")
@@ -55,7 +55,7 @@ class muteCommand extends commando.Command {
     .addField("🏹 | Target", "-> " + mutemember.author.tag)
     .addField("☀️ | Reason", "-> " + mutereason)
     .setTimestamp()
-    .setFooter("Mcsky Bot | created by hieu#0843")}).then(mutemember.addRole(muterole.id));
+    .setFooter("Mcsky Bot | created by FrostedHost")}).then(mutemember.addRole(muterole.id));
     message.channel.send(mutemember + " has been muted.");
     mutemember.sendMessage("You have been muted from the **__Mcsky Network__** for the reason of | " + mutereason + ".");
   }
