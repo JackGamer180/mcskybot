@@ -12,7 +12,7 @@ class infoCommand extends commando.Command {
       name: 'info', 
       group: 'server',
       memberName: 'info',
-      description: "Information about the FrostedHost company"
+      description: "Information about the MCsky company"
     });
   }
 
@@ -25,13 +25,13 @@ class infoCommand extends commando.Command {
     var minutes = Math.floor(totalSeconds / 60).toString();
     var seconds = totalSeconds % 60;
     message.channel.send({embed: new Discord.RichEmbed()
-    .setTitle("**FrostedHost | Information**")
+    .setTitle("**MCsky | Information**")
     .setColor("#4286f4")
-    .addField("🔨 | Coder", "-> *hieu#0843*")
+    .addField("🔨 | Coder", "-> *FrostedHost team*")
     .addField("📚 | Library", "-> *discord.js*")
     .addField("⌛ | Uptime", "-> " + `${days} days, ${hours} hours, ${minutes} minutes, and ${seconds} seconds`)
     .setTimestamp()
-    .setFooter("Mcsky Bot | created by hieu#0843")
+    .setFooter("Mcsky Bot | created by FrostedHost")
     .setAuthor(message.author.tag)})
   }
 }
