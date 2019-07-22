@@ -29,7 +29,7 @@ class requestopCommand extends commando.Command {
         .addField("✨ | User", "-> " + message.author.tag)
         .addField("💡 | Request", "-> " + requestopmessage)
         .setTimestamp()
-        .setFooter("Mcsky Bot | created by hieu#0843")})
+        .setFooter("Mcsky Bot | created by FrostedHost")})
     var messenger = message.member
     messenger.sendMessage("Thank you for sending a requestop message. We will respond within 24h; thanks for your patience.")
   }
