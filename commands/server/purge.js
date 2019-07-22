@@ -32,14 +32,14 @@ class purgeCommand extends commando.Command {
         .addField("📺 | Channel Executed", "-> " + message.channel)
         .addField("⏰ | Time", "-> " + message.createdAt)
         .setTimestamp()
-        .setFooter("Mcsky Bot | created by hieu#0843")}));
+        .setFooter("Mcsky Bot | created by FrostedHost")}));
     message.channel.bulkDelete(numberofmessagesdeleted).then(message.channel.bulkDelete(numberofmessagesdeleted));
     moderationlogs.send({embed: new Discord.RichEmbed()
-        .setTitle("**FrostedHost | Purge**")
+        .setTitle("**MCsky | Purge**")
         .setColor("#4286f4")
         .addField("📌 | Executor", message.author.tag)
         .addField("#️⃣ | Number", message.size)
-        .setFooter("Mcsky Bot | created by hieu#0843")});   
+        .setFooter("Mcsky Bot | created by FrostedHost")});   
   }
 }
 
